@@ -1,0 +1,24 @@
+<script>
+    let n = parseInt(prompt("No of Nos"));
+    let a = [];
+    let b = [];
+    let i, j;
+    for(i=0;i<n;i++){
+        a[i] = parseInt(prompt("Value"));
+    }
+    for(i=0; i<n; i++){
+        let isDup = false;;
+        for(j=0; j<b.length; j++){
+            if(a[i] == b[j]){
+                isDup = true;
+                break;
+            }
+        }
+        if(!isDup){
+            b[i] = a[i];
+        }
+    }
+    for(i=0;i<b.length;i++){
+        document.write(b[i]+" ");
+    }
+</script>

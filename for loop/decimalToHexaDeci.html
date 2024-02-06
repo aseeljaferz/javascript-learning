@@ -1,0 +1,24 @@
+<script>
+    let deci = parseInt(prompt("Dectimal value"));
+    let hexaVal = "";
+    for(;deci>0;deci=(parseInt)(deci/16)){
+        let rem = deci % 16;
+        if(rem >=0 && rem <=9){
+            hexaVal = rem + hexaVal;
+        }else if(rem == 10){
+            hexaVal = "A" + hexaVal;
+        }else if( rem == 11){
+            hexaVal = "B" + hexaVal;
+        }else if( rem == 12){
+            hexaVal = "C" + hexaVal;
+        }else if( rem == 13){
+            hexaVal = "D" + hexaVal;
+        }else if( rem == 14){
+            hexaVal = "E" + hexaVal;
+        }else if( rem == 15){
+            hexaVal = "F" + hexaVal;
+        }
+    }
+    document.write(hexaVal)
+
+</script>

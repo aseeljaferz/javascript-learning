@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var bill, unit;
+        unit = parseFloat(prompt("Enter the unit"));
+        if(unit < 200){
+            bill = unit * 1.20;
+        }else if(unit < 400){
+            bill = (199*1.20)+(unit-199)*1.50;
+        }else if(unit < 600){
+            bill = ((199*1.20) + (400 * 1.50) + (unit - 400) * 1.80);
+        }else if(unit>=600){
+            bill = ((199*1.20) + (400 * 1.50) + (600 * 1.80) + (unit - 600) * 2.00);
+        }
+        if(bill<100){
+            bill=100;
+        }else if(bill<=400){
+            bill=bill+(bill*0.15);
+        }
+        document.write("Bill amount : ",bill);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

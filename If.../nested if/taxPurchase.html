@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var amt;
+        amt = parseFloat(prompt("Enter the Purchased Amount"));
+        if(amt<20000){
+            if(amt<10000){
+                document.write("Final Bill = ",amt);
+            }
+            document.write("Final Bill = ",amt += amt * 0.10);
+        }else{
+            document.write("Final Bill = ",amt += amt * 0.20);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
